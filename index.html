@@ -51,11 +51,32 @@
 
 <template data-id="page-see-cars">
   <h2>See our cars</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Pricec Per Day</th>
+      </tr>
+    </thead>
+    <tbody id="car-rows"></tbody>
+  </table>
 </template>
 
 <template data-id="page-add-cars">
   <h2>Add/Edit Cars</h2>
   <h3>ONLY FOR ADMINS</h3>
+
+  <form>
+    <p id="car-id"></p>
+    <input id="input-brand" placeholder="Add brand" />
+    <input id="input-model" placeholder="Add Model" />
+    <input type="number" id="input-price" placeholder="Add price pr day" />
+    <input type="number" id="input-discount" placeholder="Add Best Discount" />
+    <button id="btn-add-car">Add Car</button>
+  </form>
+  <p id="car-info-all"></p>
 </template>
 
 <template data-id="page-sign-up">
